@@ -96,7 +96,7 @@ var shakes = {
     }
 },
 init = function() {
-    var t = 180,
+    var t = 200,
     e = document.querySelector("#valentine"),
     s = e.querySelector(".tiny"),
     a = e.querySelector(".shake"),
@@ -109,7 +109,7 @@ init = function() {
     };
     shakes.start(t, s, a),
     a.querySelector(".rope").style.height = t + "px",
-    a.querySelector(".heart-wrap").style.top = t - 60 + "px",
+    a.querySelector(".heart-wrap").style.top = t - 30 + "px",
     e.style.display = "block",
     i()
 };

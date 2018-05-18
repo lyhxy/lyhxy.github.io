@@ -13,26 +13,33 @@
             /*background-image: url('background.jpg');*/
             font-size: 85%;
             margin: 0;
+			background-color: #FFC125;
         }
         
         h2 {
-            font-size: 200%;
-            font-weight: 400;
+            font-size: 300%;
+			font-weight: 400;
+			/* text-align: left; */
+			margin-left: -2%;
+			/* float: left; */
         }
 		h3{
-			float:right
+			margin-right: 10%;
+			float: right;
+			font-size: 250%;
 		}
         
         .content {
-            position: absolute;
             width: 100%;
-            top: 80%;
-            transform: translate(0, -50%);
-            text-align: center;
+			/* top: 125%; */
+			margin-top: 75%;
+			transform: translate(0, -50%);
+			text-align: center;
+			color: white;
         }
         
         .timer {
-            font-size: 180%;
+            font-size: 260%;
             line-height: 1.5;              
         }
         
@@ -42,8 +49,8 @@
     </style>
 	<script type="text/javascript" src="./js/mymouse.js" id="mymouse"></script>
 <body >
-<audio autoplay="autopaly">
-		<source src="./music.mp3" audio="" mp3="">
+<audio autoplay="autopaly" loop="loop">
+		<source  src="./music.mp3" audio="" mp3="">
 	</audio>
 <div class="view-top" style="margin:20px auto">
 <div class="content">
@@ -91,7 +98,7 @@
             if (s < 10) {
                 s = "0" + s;
             }
-            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24+30);
             document.getElementById('h').innerHTML = h;
             document.getElementById('m').innerHTML = m;
             document.getElementById('s').innerHTML = s;

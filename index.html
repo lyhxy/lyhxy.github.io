@@ -49,7 +49,7 @@
     </style>
 	<script type="text/javascript" src="./js/mymouse.js" id="mymouse"></script>
 <body >
-<audio autoplay="autopaly" loop="loop">
+<audio id="audio" autoplay="autopaly" loop="loop">
 		<source  src="./music.mp3" audio="" mp3="">
 	</audio>
 <div class="view-top" style="margin:20px auto">
@@ -106,5 +106,11 @@
         timer();
         setInterval(timer, 1000);
     </script>
+	<script>
+		　var audio=document.querySelector("#audio");
+			document.addEventListener("WeixinJSBridgeReady",function(){
+		audio.play();
+    },false);
+	</script>
 </body>
 </html>
